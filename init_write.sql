@@ -1,0 +1,9 @@
+USE mydb;
+
+CREATE TABLE `user` (
+  `id` BIGINT(19) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+INSERT `user` (`name`) VALUES ('WRITE');

@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    read:
+      jdbc-url: jdbc:mysql://localhost:3308/mydb
+      username: root
+      password : rootpassword
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    write:
+      jdbc-url: jdbc:mysql://localhost:3307/mydb
+      username: root
+      password : rootpassword
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        format_sql: true
+        highlight_sql: true
+    hibernate:
+      ddl-auto: update
